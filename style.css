@@ -38,6 +38,7 @@ section {
 .section-title {
     font-size: 3.2rem;
     font-weight: 700;
+    font-family: "Noto Serif", serif;
 }
 
 .section-description {
@@ -158,6 +159,39 @@ section {
     padding: 15px 88.5px;
 }
 
+/* Flower & Plants Lover Section style */
+
+.flower-lover {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 200px;
+}
+
+.flower-lover div {
+    width: 50%;
+}
+
+.flower-lover-image-container {
+    position: relative;
+}
+
+.flower-lover-img {
+    width: 100%;
+}
+
+#batch {
+    position: absolute;
+    width: 50%;
+    left: 360px;
+    bottom: 450px;
+
+}
+
+.flower-lover-info ul li {
+    margin-bottom: 50px;
+}
+
 
 /* -----mobile Responsive Media Query styles----- */
 
@@ -215,6 +249,29 @@ section {
 
     .card-btn {
         padding: 15px 47px;
+    }
+
+
+    /* Flower & Plants Lover Section style */
+
+    .flower-lover {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 80px;
+    }
+
+    .flower-lover div {
+        width: 100%;
+    }
+
+    #batch {
+        display: none;
+
+    }
+
+    .flower-lover-info ul li {
+        margin-bottom: 30px;
+
     }
 
 
