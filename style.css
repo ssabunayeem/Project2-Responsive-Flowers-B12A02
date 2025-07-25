@@ -93,15 +93,86 @@ section {
     padding-top: 6.6rem;
 }
 
+.banner div {
+    width: 50%;
+}
+
 .banner-title {
     font-size: 4rem;
+    font-weight: 700;
     margin-bottom: 13px;
 }
 
+.banner-image img {
+    width: 100%;
+}
 
-/* mobile Responsive Media Query styles */
+/*  Our Plants section styles */
+.plants {
+    text-align: center;
+}
+
+.plants-info {
+    max-width: 890px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plants-info h2 {
+    margin-bottom: 0;
+}
+
+.flower-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.flower-card {
+    text-align: center;
+}
+
+.flower-name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 10px 0;
+    margin-bottom: 0;
+}
+
+.flower-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flower-image {
+    width: 100%;
+}
+
+.card-btn {
+    color: white;
+    background-color: #E95A08;
+    font-weight: 600;
+    border: 0;
+    padding: 15px 88.5px;
+}
+
+
+/* -----mobile Responsive Media Query styles----- */
 
 @media screen and (max-width: 576px) {
+
+    /* shared styles */
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+
+    }
 
     /* mobile nav related styles */
     .logo {
@@ -114,6 +185,36 @@ section {
 
     .hide {
         display: none;
+    }
+
+
+    /* banner related styles */
+
+    .banner {
+        flex-direction: column-reverse;
+        padding-top: 0rem;
+        margin-top: 1.2rem;
+    }
+
+    .banner div {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+        margin-bottom: 13px;
+    }
+
+
+    /*  Our Plants section styles */
+
+    .flower-list {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .card-btn {
+        padding: 15px 47px;
     }
 
 
