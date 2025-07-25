@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.noto-serif-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared Styles */
+
+header,
+main,
+footer {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.primary-color {
+    color: #E95A08;
+}
+
+
+section {
+    margin-top: 120px;
+}
+
+.section-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.section-description {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* nav related styles */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    gap: 3rem;
+
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+
+}
+
+.nav-link {
+    color: black;
+}
+
+.link-gray {
+    color: #8987A1;
+}
+
+.fa-solid {
+    margin-right: 5px;
+}
+
+
+
+/* banner related styles */
+
+.banner {
+    display: flex;
+    padding-top: 6.6rem;
+}
+
+.banner-title {
+    font-size: 4rem;
+    margin-bottom: 13px;
+}
+
+
+/* mobile Responsive Media Query styles */
+
+@media screen and (max-width: 576px) {
+
+    /* mobile nav related styles */
+    .logo {
+        width: 50%;
+    }
+
+    .nav ul {
+        gap: 0;
+    }
+
+    .hide {
+        display: none;
+    }
+
+
+}
